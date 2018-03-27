@@ -1,5 +1,6 @@
 {
   "name": "folio",
+  "homepage": "https://pazuzu111.github.io/folioTemplate",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,6 +9,7 @@
     "chart.js": "^2.7.1",
     "cors": "^2.8.4",
     "express": "^4.16.2",
+    "gh-pages": "^1.1.0",
     "jquery": "^3.2.1",
     "react": "^16.0.0",
     "react-chartjs-2": "^2.6.4",
@@ -17,6 +19,9 @@
     "webpack-hot-middleware": "^2.20.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
