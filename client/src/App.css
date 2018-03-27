@@ -14,8 +14,10 @@ hr {
 body {
     margin: 0;
     text-align: center;
-    background: fixed url(https://threefoldsystems.com/wp-content/uploads/2017/07/web-development.jpg);
-    background-size:cover;
+    background: #44A08D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     color: white;
 }
 
@@ -26,10 +28,6 @@ h1 {
     position: fixed;
     top: 0;
     color: silver;
-    background: #485563;
-    background: -webkit-linear-gradient(#29323c, #485563);
-    background: -o-linear-gradient(#29323c, #485563);
-    background: linear-gradient(#29323c, #485563);
 }
 
 p {
@@ -37,15 +35,12 @@ p {
     padding: 0 16%;
     font-size: 23px;
     font-family: 'Quattrocento Sans', sans-serif;
-
 }
 
 h2 {
-    font-family: 'Philosopher', sans-serif;
+    font-family: 'helvetica', sans-serif;
     font-size: 1.9em;
-    font-weight: bold
-
-
+    font-weight: bold;
 }
 
 h3 {
@@ -160,7 +155,6 @@ li {
     flex-flow: row wrap;
     justify-content: space-around;
     background-color: rgba(0, 0, 0, 0.8);
-
 }
 
 #con1 {
@@ -168,9 +162,8 @@ li {
 }
 
 img {
-      padding-bottom: -10px;
-      height: 155px;
-
+    padding-bottom: -10px;
+    height: 155px;
 }
 
 .fa {
@@ -183,7 +176,7 @@ img {
 }
 
 .fa-envelope {
-  padding-left: 17px;
+    padding-left: 17px;
 }
 
 .fa-github, .fa-linkedin, .fa-envelope {
@@ -206,24 +199,21 @@ p {
 button {
     border: none;
     outline: none;
-    background-color: red;
+    background-color: navy;
     color: silver;
     transition: .5s;
     padding: 1.5%;
     font-size: 14px;
     letter-spacing: 1px;
     margin-bottom: 2%;
-
+    font-weight: bold;
 }
 
 button:hover {
-    border: none;
-    outline: none;
-    background-color: #ab7b7b85;
-    color: white;
     transition: .5s;
     padding: 2%;
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 .favs {
@@ -254,7 +244,7 @@ button:hover {
       color: white;
       margin-bottom: 5%;
       border-radius: 2%;
-      background: rgba(255, 0, 0, 0.45);
+      background: rgba(0, 0, 255, 0.45);
 }
 
 .post:hover {
