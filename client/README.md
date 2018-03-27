@@ -1,5 +1,0 @@
-# portfolio
-
-- react
-- css
-- html
